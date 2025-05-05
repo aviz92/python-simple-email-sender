@@ -29,7 +29,7 @@ export EMAIL_PASSWORD="your-app-password-or-email-password"
 ```
 
 > **Note:** For Gmail accounts, you may need to use an App Password instead of your regular password, especially if you have 2-factor authentication enabled.
-
+> https://myaccount.google.com/apppasswords
 ---
 
 ### Simple Example
