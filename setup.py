@@ -25,7 +25,7 @@ setup(
     ],
     python_requires=">=3.9",
     install_requires=[
-        'setuptools'
+        'setuptools',
         'wheel',
         'dotenv',
         "custom-python-logger>=0.1.4",
