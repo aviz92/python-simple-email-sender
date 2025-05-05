@@ -11,9 +11,9 @@ setup(
     description="Enhanced Gmail sender",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/aviz92/python-simple-email-sender ",
+    url="https://github.com/aviz92/python-simple-email-sender",
     project_urls={
-        'Repository': 'https://github.com/aviz92/python-simple-email-sender ',
+        'Repository': 'https://github.com/aviz92/python-simple-email-sender',
     },
     packages=find_packages(),
     classifiers=[
