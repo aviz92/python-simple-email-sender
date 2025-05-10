@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="python-simple-email-sender",
-    version="0.2.0",
+    version="0.2.1",
     author='Avi Zaguri',
     author_email="",
     description="Enhanced Gmail sender",
