@@ -16,6 +16,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
+      - name: Set working directory
+        run: cd python-simple-email-sender
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
