@@ -34,8 +34,8 @@ jobs:
           pip list
 
       - name: Install Build dependencies
-        run: python -m pip install build
-      
+        run: python -m pip install build twine
+
       - name: Build the package
         run: |
           pwd
