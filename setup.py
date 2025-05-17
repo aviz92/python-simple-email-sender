@@ -1,4 +1,7 @@
+import os
 from setuptools import setup, find_packages
+
+here = os.path.abspath(os.path.dirname(__file__))  # Get the directory where setup.py is located
 
 package_version = '1.0.3'
 
