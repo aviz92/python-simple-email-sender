@@ -1,34 +1,40 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+package_version = '1.0.1'
+
+package_name = 'python-simple-email-sender'
+package_description = 'Enhanced Gmail sender'
+
+package_long_description_content_type = 'text/markdown'
+package_url = f'https://github.com/aviz92/{package_name}'
+package_python_requires = '>=3.11'
+package_author = 'Avi Zaguri'
+
+with open('requirements.txt', 'r') as file:
+    package_install_requires = [
+        line.strip() for line in file.readlines() if line.strip() and not line.startswith('#')
+    ]
+
+with open('README.md', 'r') as file:
+    package_long_description = file.read()
 
 setup(
-    name="python-simple-email-sender",
-    version="1.0.0",
-    author='Avi Zaguri',
-    author_email="",
-    description="Enhanced Gmail sender",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/aviz92/python-simple-email-sender",
+    name=package_name,
+    version=package_version,
+    packages=find_packages(include=[package_name, f'{package_name}.*']),
+    install_requires=package_install_requires,
+    author=package_author,
+    author_email='',
+    description=package_description,
+    long_description=package_long_description,
+    long_description_content_type=package_long_description_content_type,
+    url=package_url,
     project_urls={
-        'Repository': 'https://github.com/aviz92/python-simple-email-sender',
+        'Repository': package_url,
     },
-    packages=find_packages(),
     classifiers=[
-        "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3",
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
     ],
-    python_requires=">=3.9",
-    install_requires=[
-        'setuptools',
-        'wheel',
-        'dotenv',
-        "custom-python-logger>=0.1.4",
-    ],
-    keywords="email, gmail, smtplib",
+    python_requires=package_python_requires,
 )
