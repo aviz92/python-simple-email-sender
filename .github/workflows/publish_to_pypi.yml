@@ -36,11 +36,13 @@ jobs:
       - name: Install Build dependencies
         run: python -m pip install build twine
 
-      - name: Build the package
+      - name: List directory contents
         run: |
           pwd
-          ls -l
-          python -m build
+          ls -la
+      
+      - name: Build the package
+        run: python -m build
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
