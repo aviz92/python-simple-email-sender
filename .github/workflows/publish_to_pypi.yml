@@ -14,9 +14,12 @@ jobs:
 
     defaults:
       run:
-        working-directory: python_simple_email_sender
+        working-directory: python-simple-email-sender
     
     steps:
+      - name: pwd
+        run: pws
+
       - name: Check out code
         uses: actions/checkout@v2
 
