@@ -14,25 +14,25 @@ jobs:
 
     defaults:
       run:
-        working-directory: python-simple-email-sender
+        working-directory: app
     
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Set working directory
-        run: cd python-simple-email-sender
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v2
         with:
           python-version: '3.11'
 
-      - name: List files in project directory
-        run: ls -alh
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Install build dependencies
-        run: python -m pip install --upgrade build
+      - name: Verify installed packages
+        run: |
+          pip list
 
       - name: Build the package
         run: python -m build
