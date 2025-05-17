@@ -11,10 +11,6 @@ jobs:
   build-and-publish:
     name: Build and Publish to PyPI
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: python-simple-email-sender
     
     steps:
       - name: pwd
