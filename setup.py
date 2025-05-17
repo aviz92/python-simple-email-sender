@@ -32,9 +32,5 @@ setup(
     project_urls={
         'Repository': package_url,
     },
-    classifiers=[
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
     python_requires=package_python_requires,
 )
