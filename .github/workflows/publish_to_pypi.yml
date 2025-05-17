@@ -39,6 +39,7 @@ jobs:
       - name: Build the package
         run: |
           pwd
+          ls -l
           python -m build
 
       - name: Publish to PyPI
