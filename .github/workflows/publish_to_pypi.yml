@@ -24,11 +24,17 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: List files in project directory
+        run: ls -alh
+        working-directory: ./python-simple-email-sender
+
       - name: Install build dependencies
         run: python -m pip install --upgrade build
+        working-directory: ./python-simple-email-sender
 
       - name: Build the package
         run: python -m build
+        working-directory: ./python-simple-email-sender
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
