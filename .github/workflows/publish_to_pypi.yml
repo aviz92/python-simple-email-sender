@@ -14,7 +14,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: app
+        working-directory: python_simple_email_sender
     
     steps:
       - name: Check out code
