@@ -41,7 +41,6 @@ jobs:
           pwd
           ls -l
           python -m build
-        working-directory: ./python-simple-email-sender
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
