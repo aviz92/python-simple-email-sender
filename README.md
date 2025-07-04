@@ -7,14 +7,14 @@ A lightweight Python library for sending emails with attachments via SMTP.
 - Send emails using SMTP protocol
 - Support for SSL encryption
 - Add attachments to emails
-- Environment variable based configuration
+- Environment variable-based configuration
 - Simple logging integration
 
 ---
 
 ## Installation
 ```bash
-pip install python_simple_email_sender
+pip install python-simple-email-sender
 ```
 
 ---
