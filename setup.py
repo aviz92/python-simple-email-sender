@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-package_version = '1.0.4'
+package_version = '1.0.5'
 
 package_name = 'python-simple-email-sender'
 package_description = 'Enhanced Gmail sender'
