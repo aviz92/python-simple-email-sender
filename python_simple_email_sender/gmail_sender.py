@@ -1,4 +1,3 @@
-import logging
 import os
 import smtplib
 from pathlib import Path
@@ -7,6 +6,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
+from custom_python_logger import get_logger
+
 
 class EmailSender:
     def __init__(
@@ -14,7 +15,7 @@ class EmailSender:
         server_name: str = 'smtp.gmail.com',
         server_port: int = 465
     ):
-        self.logger = logging.getLogger(self.__class__.__name__)
+        self.logger = get_logger(self.__class__.__name__)
         self.server_name = server_name
         self.server_port = server_port
         self.email_address = os.getenv('EMAIL_ADDRESS')

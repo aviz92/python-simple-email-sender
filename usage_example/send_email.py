@@ -1,11 +1,11 @@
 import logging
-from custom_python_logger.logger import get_logger
+from custom_python_logger.logger import build_logger
 
 from python_simple_email_sender.gmail_sender import EmailSender
 
 
 def main():
-    logger = get_logger(
+    logger = build_logger(
         project_name='Gmail Sender',
         log_level=logging.DEBUG,
         extra={'user': 'test_user'}
