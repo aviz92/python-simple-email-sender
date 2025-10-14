@@ -89,8 +89,8 @@ sender.add_attachment("image.png", subtype="png")
 with smtplib.SMTP_SSL(sender.server_name, sender.server_port) as smtp_server:
     smtp_server.login(sender.email_address, sender.email_password)
     smtp_server.sendmail(
-        from_addr=sender.email_address, 
-        to_addrs=['recipient@example.com'], 
+        from_addr=sender.email_address,
+        to_addrs=['recipient@example.com'],
         msg=sender.msg.as_string()
     )
 ```

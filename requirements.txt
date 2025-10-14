@@ -1,4 +1,5 @@
 setuptools
 wheel
-dotenv
+python-dotenv
+pre-commit
 custom-python-logger
