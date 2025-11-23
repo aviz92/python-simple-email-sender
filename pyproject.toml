@@ -2,10 +2,38 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.black]
-line-length = 100
-target-version = ["py39", "py310", "py311"]
+[project]
+name = "python-simple-email-sender"
+version = "1.0.7"
+description = "python-simple-email-sender"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Avi Zaguri" },]
+keywords = ["development", "email", "smtp", "sender", "simple"]
 
-[tool.isort]
-profile = "black"
-line_length = 100
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Logging",
+]
+
+dependencies = [
+    "custom-python-logger>=2.0.10",
+    "pre-commit>=4.5.0",
+    "python-dotenv>=1.2.1",
+    "setuptools>=80.9.0",
+    "wheel>=0.45.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/aviz92/python-simple-email-sender"
+Repository = "https://github.com/aviz92/python-simple-email-sender"
+Issues = "https://github.com/aviz92/python-simple-email-sender/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["python_simple_email_sender*"]
+namespaces = false

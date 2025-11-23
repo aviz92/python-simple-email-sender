@@ -1,5 +1,0 @@
-setuptools
-wheel
-python-dotenv
-pre-commit
-custom-python-logger
