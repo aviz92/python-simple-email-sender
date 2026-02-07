@@ -1,3 +1,12 @@
+![PyPI version](https://img.shields.io/pypi/v/python-simple-email-sender)
+![Python](https://img.shields.io/badge/python->=3.12-blue)
+![Development Status](https://img.shields.io/badge/status-stable-green)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
+![PyPI](https://img.shields.io/pypi/dm/python-simple-email-sender)
+![License](https://img.shields.io/pypi/l/python-simple-email-sender)
+
+---
+
 # Python Simple Email Sender
 A lightweight Python library for sending emails with attachments via SMTP.
 
