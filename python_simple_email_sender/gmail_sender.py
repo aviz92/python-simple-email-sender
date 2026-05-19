@@ -7,10 +7,12 @@ from pathlib import Path
 
 from custom_python_logger import get_logger
 
+from python_simple_email_sender.consts import LOGGER_NAME
+
 
 class EmailSender:
     def __init__(self, server_name: str = "smtp.gmail.com", server_port: int = 465) -> None:
-        self.logger = get_logger(self.__class__.__name__)
+        self.logger = get_logger(LOGGER_NAME)
         self.server_name = server_name
         self.server_port = server_port
         self.email_address = os.getenv("EMAIL_ADDRESS")
